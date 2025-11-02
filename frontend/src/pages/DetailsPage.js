@@ -7,7 +7,7 @@ import { AuthContext } from '../services/AuthContext';
 
 const OMDB_API_KEY = 'de9d2f77';
 const OMDB_BASE_URL = 'https://www.omdbapi.com/';
-const BACKEND_URL = 'http://localhost:5000/api';
+const BACKEND_URI = 'https://movie-haih.onrender.com/api';
 
 const DetailsPage = () => {
     const { movieId } = useParams(); 
