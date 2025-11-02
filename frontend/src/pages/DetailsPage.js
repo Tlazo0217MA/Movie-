@@ -52,7 +52,7 @@ const DetailsPage = () => {
     const fetchReviews = useCallback(async () => {
         setReviewLoading(true);
         try {
-            const response = await axios.get(`${BACKEND_URL}/reviews/${movieId}`);
+            const response = await axios.get(`${BACKEND_URI}/reviews/${movieId}`);
             setReviews(response.data);
         } catch (err) {
             console.error("Error fetching reviews:", err);
@@ -90,7 +90,7 @@ const DetailsPage = () => {
                 userName: currentUser.email 
             };
 
-            await axios.post(`${BACKEND_URL}/reviews`, reviewData, {
+            await axios.post(`${BACKEND_URI}/reviews`, reviewData, {
                 headers: {
                     Authorization: `Bearer ${await currentUser.getIdToken()}`
                 }
