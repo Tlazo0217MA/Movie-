@@ -1,0 +1,15 @@
+# Dependency directories
+/node_modules
+/frontend/node_modules
+/server/node_modules
+
+# Environment variables (SENSITIVE DATA)
+.env
+/frontend/.env
+/server/.env
+
+# Build artifacts
+/frontend/build
+
+# Firebase sensitive key
+/server/serviceAccountKey.json
